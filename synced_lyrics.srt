@@ -1,0 +1,40 @@
+1
+00:00:00,000 --> 00:00:05,000
+Thumbi penne kothiyille neril kaanaan
+
+2
+00:00:05,000 --> 00:00:10,000
+Vanittunde en velipennu
+
+3
+00:00:10,000 --> 00:00:15,000
+Kavilathunde kannadi thundu
+
+4
+00:00:15,000 --> 00:00:20,000
+Chundathunde chingara chundu
+
+5
+00:00:20,000 --> 00:00:25,000
+Neela kaayalupol thonum omal kannanu
+
+6
+00:00:25,000 --> 00:00:30,000
+Mudi kaarmukilum tholkum naadan chelaanu
+
+7
+00:00:30,000 --> 00:00:35,000
+Konde poraam pennalle ponnona kaalathu
+
+8
+00:00:35,000 --> 00:00:40,000
+Kannum nenjum kannaale nee kaanum nerathu
+
+9
+00:00:40,000 --> 00:00:45,000
+Thanka thaamarapol poonthen chinthum nenjanu
+
+10
+00:00:45,000 --> 00:00:50,000
+Chella thaarakalum pennum pande koottaannu
+

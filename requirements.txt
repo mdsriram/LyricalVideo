@@ -1,0 +1,4 @@
+lyricsgenius 
+ffmpeg-python 
+pillow
+python-dotenv
