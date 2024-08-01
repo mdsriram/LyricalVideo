@@ -87,6 +87,16 @@ pip install lyricsgenius python-dotenv
 - create_video.py: Module for integrating subtitles into the video using FFmpeg.
 - .env: Environment file for storing API tokens and other configurations.
 - requirements.txt: List of Python dependencies.
+- testcases.txt: List of testcases for the project functions.Each test case includes:
+     - Function Name: The name of the function being tested.
+     - Test Case Number: A unique identifier for the test case.
+     - Input: The input values used for the test.
+     - Expected Output: The expected result from the function.
+How to Run Testcases
+- Ensure you have the necessary dependencies installed.
+- Check the testcases.txt file for the specific test cases and expected results.
+- Manually test each function according to the cases described.
+For automated testing, consider implementing a test suite in a testing framework like unittest or pytest, which will read these test cases and validate the functionality.
 
 ## Contributing
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
