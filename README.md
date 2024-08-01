@@ -56,15 +56,15 @@ This project uses the Genius API to fetch lyrics for songs. The Genius API provi
 To use the Genius API, you first need a Genius account. If you don't already have one, sign up at Genius.
 2. Obtain an API Access Token
 - Create a Developer Account:
--- Visit the Genius API Developer page.
--- Log in with your Genius account credentials.
+   1. Visit the Genius API Developer page.
+   2.  Log in with your Genius account credentials.
 - Register Your Application:
--- Click on "Create an API Client" or "Register Your Application."
--- Fill out the required details:
-  --- Application Name: Enter a name for your application.
-  --- Application Website URL: Provide a URL for your application (a placeholder URL is acceptable if you don’t have one).
-  --- OAuth Redirect URI: Use http://localhost:8000 if you don't have a specific URI.
--- After registering, you will receive an Access Token.
+   1. Click on "Create an API Client" or "Register Your Application."
+   2. Fill out the required details:
+      - Application Name: Enter a name for your application.
+      - Application Website URL: Provide a URL for your application (a placeholder URL is acceptable if you don’t have one).
+      - OAuth Redirect URI: Use http://localhost:8000 if you don't have a specific URI.
+    3. After registering, you will receive an Access Token.
 3. Configure Your Environment
 - Create a .env File:
 -- In the root directory of your project, create a file named .env and add your GENIUS_TOKEN
@@ -77,7 +77,7 @@ pip install lyricsgenius python-dotenv
 - Edit the main.py file to specify the song title, artist name, input video path, and output video path.
 2. Run the script:
   - Execute the following command in your terminal:
-python main.py
+      python main.py
   - This will fetch lyrics, create a subtitle file, and generate a video with embedded lyrics.
 
 ## Files
