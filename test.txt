@@ -1,0 +1,120 @@
+1. Test create_video Function
+Test Case 1: Basic Functionality
+Input:
+- input_video: Path to a valid input video file.
+- srt_file: Path to a valid SRT file.
+- utput_video: Desired path for the output video file.
+Expected Output:
+The output video file should be created with subtitles from the SRT file.
+
+Test Case 2: Missing Input Video
+Input:
+- input_video: Path to a non-existent video file.
+- srt_file: Path to a valid SRT file.
+- output_video: Desired path for the output video file.
+Expected Output:
+The function should raise an error indicating the input video file does not exist.
+
+2. Test extract_audio_from_video Function
+Test Case 1: Basic Functionality
+Input:
+- input_video: Path to a valid input video file.
+- output_audio: Desired path for the output audio file.
+Expected Output:
+The output audio file should be created.
+
+Test Case 2: Missing Input Video
+Input:
+- input_video: Path to a non-existent video file.
+- output_audio: Desired path for the output audio file.
+Expected Output:
+The function should raise an error indicating the input video file does not exist.
+
+3. Test fetch_lyrics Function
+Test Case 1: Valid Song and Artist
+Input:
+- song_title: Title of a song that exists in Genius.
+- artist_name: Artist of the song.
+- genius_token: Valid Genius API token.
+Expected Output:
+The function should return the lyrics of the song.
+
+Test Case 2: Invalid Song or Artist
+Input:
+- song_title: Title of a song that does not exist.
+- artist_name: Artist of the song.
+- genius_token: Valid Genius API token.
+Expected Output:
+The function should return None.
+
+Test Case 3: Invalid Genius Token
+Input:
+- song_title: Title of a song that exists in Genius.
+- artist_name: Artist of the song.
+- genius_token: Invalid Genius API token.
+Expected Output:
+The function should raise an error related to authentication.
+
+4. Test seconds_to_srt_time Function
+Test Case 1: Valid Seconds
+Input:
+- seconds: A float value representing time (e.g., 10.567).
+Expected Output:
+Correctly formatted SRT time string (e.g., 00:00:10,567).
+
+Test Case 2: Zero Seconds
+Input:
+- seconds: 0.0.
+Expected Output:
+00:00:00,000.
+
+5. Test clean_lyrics Function
+Test Case 1: Lyrics with Unwanted Lines
+Input:
+- lyrics: Lyrics with lines containing "Contributor", "Lyrics", etc.
+Expected Output:
+Cleaned lyrics without unwanted lines.
+
+Test Case 2: Lyrics with Only Unwanted Lines
+Input:
+- lyrics: Lyrics containing only unwanted lines.
+Expected Output:
+An empty string.
+
+6. Test convert_lyrics_to_srt Function
+Test Case 1: Valid Lyrics with Timestamps
+Input:
+- lyrics_with_timestamps: List of tuples with timestamps and lyrics.
+Expected Output:
+Correctly formatted SRT string.
+
+Test Case 2: Empty Lyrics List
+Input:
+- lyrics_with_timestamps: Empty list.
+Expected Output:
+"No lyrics provided."
+
+7. Test main Function
+Test Case 1: Complete Flow
+Input:
+- Valid song_title, artist_name, genius_token, input_video, output_video.
+Expected Output:
+A video with subtitles correctly added.
+
+Test Case 2: Missing Lyrics
+Input:
+- song_title and artist_name that do not return lyrics.
+Expected Output:
+"Lyrics not found."
+
+Test Case 3: Missing Genius Token
+Input:
+- No GENIUS_TOKEN provided.
+Expected Output:
+"GENIUS_TOKEN is not set. Please check your .env file."
+
+Test Case 4: Invalid File Paths
+Input:
+- Invalid input_video and/or output_video paths.
+Expected Output:
+Errors indicating invalid paths.
