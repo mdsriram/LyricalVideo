@@ -20,7 +20,7 @@ FFmpeg is a powerful tool used for video and audio processing. It is essential f
    2. Click on the "Windows" logo and download a build from one of the provided links (e.g., "Windows builds by BtbN").
 - Extract the files
   Extract the downloaded ZIP file to a directory of your choice (e.g., C:\ffmpeg).
-- Add FFmpeg to System PATH:
+- Add FFmpeg to System PATH
   1. Open the Start Menu and search for "Environment Variables".
   2. Click on "Edit the system environment variables".
   3. In the System Properties window, click on "Environment Variables".
@@ -32,7 +32,7 @@ FFmpeg is a powerful tool used for video and audio processing. It is essential f
 
 2. macOS
 - Install Homebrew (if not already installed):
-  Open Terminal and run:
+  Open Terminal and run
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 - Install FFmpeg
 In Terminal, run
@@ -55,12 +55,12 @@ This project uses the Genius API to fetch lyrics for songs. The Genius API provi
 1. Create a Genius Account
 To use the Genius API, you first need a Genius account. If you don't already have one, sign up at Genius.
 2. Obtain an API Access Token
-- Create a Developer Account:
+- Create a Developer Account
    1. Visit the Genius API Developer page.
    2.  Log in with your Genius account credentials.
-- Register Your Application:
+- Register Your Application
    1. Click on "Create an API Client" or "Register Your Application."
-   2. Fill out the required details:
+   2. Fill out the required details
       - Application Name: Enter a name for your application.
       - Application Website URL: Provide a URL for your application (a placeholder URL is acceptable if you don’t have one).
       - OAuth Redirect URI: Use http://localhost:8000 if you don't have a specific URI.
@@ -73,10 +73,10 @@ To use the Genius API, you first need a Genius account. If you don't already hav
 pip install lyricsgenius python-dotenv
 
 ## Usage
-1. Prepare your lyrics and video:
+1. Prepare your lyrics and video
 - Edit the main.py file to specify the song title, artist name, input video path, and output video path.
-2. Run the script:
-  - Execute the following command in your terminal:
+2. Run the script
+  - Execute the following command in your terminal
       python main.py
   - This will fetch lyrics, create a subtitle file, and generate a video with embedded lyrics.
 
