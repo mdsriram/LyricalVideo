@@ -33,9 +33,11 @@ FFmpeg is a powerful tool used for video and audio processing. It is essential f
 2. macOS
 - Install Homebrew (if not already installed):
   Open Terminal and run
+  ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 - Install FFmpeg
 In Terminal, run
+```bash
 brew install ffmpeg
 - Verify Installation
 Type ffmpeg -version in Terminal to ensure FFmpeg is installed.
@@ -43,10 +45,14 @@ Type ffmpeg -version in Terminal to ensure FFmpeg is installed.
 3. Linux
 - Install FFmpeg via Package Manager
   For Debian-based systems (e.g., Ubuntu), run:
+```bash
 sudo apt update
 sudo apt install ffmpeg
+
   For Red Hat-based systems (e.g., Fedora), run:
+```bash
 sudo dnf install ffmpeg
+
 - Verify Installation
 Run ffmpeg -version in your terminal to check the installation.
 
@@ -77,6 +83,7 @@ pip install lyricsgenius python-dotenv
 - Edit the main.py file to specify the song title, artist name, input video path, and output video path.
 2. Run the script
   - Execute the following command in your terminal
+      ```bash
       python main.py
   - This will fetch lyrics, create a subtitle file, and generate a video with embedded lyrics.
 
