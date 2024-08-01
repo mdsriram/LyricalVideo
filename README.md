@@ -92,7 +92,7 @@ pip install lyricsgenius python-dotenv
      - Test Case Number: A unique identifier for the test case.
      - Input: The input values used for the test.
      - Expected Output: The expected result from the function.
-How to Run Testcases
+# How to Run Testcases
 - Ensure you have the necessary dependencies installed.
 - Check the testcases.txt file for the specific test cases and expected results.
 - Manually test each function according to the cases described.
