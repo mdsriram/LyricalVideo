@@ -15,39 +15,39 @@ https://www.python.org/downloads/
 FFmpeg is a powerful tool used for video and audio processing. It is essential for adding subtitles to videos and handling various video formats.Follow the FFmpeg installation guide for instructions.
 # Installation 
 1. Windows:
-# Download FFmpeg:
-- Go to the FFmpeg download page.
-- Click on the "Windows" logo and download a build from one of the provided links (e.g., "Windows builds by BtbN").
-# Extract the files:
-- Extract the downloaded ZIP file to a directory of your choice (e.g., C:\ffmpeg).
-# Add FFmpeg to System PATH:
-- Open the Start Menu and search for "Environment Variables".
-- Click on "Edit the system environment variables".
-- In the System Properties window, click on "Environment Variables".
-- Under "System variables", find and select the "Path" variable, then click "Edit".
-- Click "New" and add the path to the bin directory of the FFmpeg folder (e.g., C:\ffmpeg\bin).
-- Click "OK" to close all dialogs.
-# Verify Installation:
+- Download FFmpeg:
+   1. Go to the FFmpeg download page.
+   2. Click on the "Windows" logo and download a build from one of the provided links (e.g., "Windows builds by BtbN").
+- Extract the files:
+  Extract the downloaded ZIP file to a directory of your choice (e.g., C:\ffmpeg).
+- Add FFmpeg to System PATH:
+  1. Open the Start Menu and search for "Environment Variables".
+  2. Click on "Edit the system environment variables".
+  3. In the System Properties window, click on "Environment Variables".
+  4. Under "System variables", find and select the "Path" variable, then click "Edit".
+  5.Click "New" and add the path to the bin directory of the FFmpeg folder (e.g., C:\ffmpeg\bin).
+  6. Click "OK" to close all dialogs.
+- Verify Installation:
 -Open Command Prompt and type ffmpeg -version to check if FFmpeg is installed correctly.
 
 2. macOS:
-# Install Homebrew (if not already installed):
-- Open Terminal and run:
+- Install Homebrew (if not already installed):
+  Open Terminal and run:
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# Install FFmpeg:
+- Install FFmpeg:
 In Terminal, run:
 brew install ffmpeg
-# Verify Installation:
+- Verify Installation:
 Type ffmpeg -version in Terminal to ensure FFmpeg is installed.
 
 3. Linux:
-# Install FFmpeg via Package Manager:
-- For Debian-based systems (e.g., Ubuntu), run:
+- Install FFmpeg via Package Manager:
+  For Debian-based systems (e.g., Ubuntu), run:
 sudo apt update
 sudo apt install ffmpeg
-- For Red Hat-based systems (e.g., Fedora), run:
+  For Red Hat-based systems (e.g., Fedora), run:
 sudo dnf install ffmpeg
-# Verify Installation:
+- Verify Installation:
 Run ffmpeg -version in your terminal to check the installation.
 
 # LyricsGenius
